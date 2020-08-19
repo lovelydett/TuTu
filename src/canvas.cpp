@@ -1,5 +1,5 @@
 #include "canvas.h"
-Canvas *instancePtr = nullptr;
+Canvas* Canvas::instancePtr = nullptr;
 bool Canvas::draw(BaseShape* shape) 
 {
     return bitmap.drawPixels(shape->draw()) && bitmap.doDraw();

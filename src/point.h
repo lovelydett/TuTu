@@ -10,7 +10,7 @@ public:
     float x;
     float y;
     Point(): x(.0),y(.0){}
-    Point(float x,float y): x(x),y(y){}
+    Point(float xx,float yy):x(xx),y(yy){}
     Point(Point& point):x(point.x),y(point.y){}
     Point& set(Point& point);
     Point& set(float x, float y);

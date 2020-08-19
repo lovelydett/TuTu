@@ -23,7 +23,8 @@ Point& Point::operator= (Point& point)
 
 Point Point::operator- (Point& point) 
 {
-    return Point(x-point.x,y-point.y);
+    Point p(x-point.x,y-point.y);
+    return p;
 }
 
 Point& Point::operator+=(Point& point) 
@@ -42,17 +43,20 @@ Point& Point::operator-=(Point& point)
 
 Point Point::operator+ (Point& point) 
 {
-    return Point(x+point.x,y+point.y);
+    Point p(x+point.x,y+point.y);
+    return p;
 }
 
 Point Point::operator* (float r) 
 {
-    return Point(r*x,r*y);
+    Point p(x*r,y*r);
+    return p;
 }
 
 Point Point::operator/ (float r) 
 {
-    return Point(x/r,y/r);
+    Point p(x/r,y/r);
+    return p;
 }
 
 Point& Point::operator*= (float r) 
