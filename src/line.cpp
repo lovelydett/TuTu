@@ -21,7 +21,7 @@ std::vector<PixelI> Line::draw()
     //中点画线法实现直线扫描转换算法
     int x0 = start.x, y0 = start.y;
     int x1 = end.x, y1 = end.y;
-    float k = (y1-y0)/ (x1-x0)<EPSILON?EPSILON:(x1-x0);
+    float k = (y1-y0)/ ((x1-x0)<EPSILON?EPSILON:(x1-x0));
     if (fabs(k)>1) {
         //决定以谁为基准
         swap<int>(x0,y0); 
