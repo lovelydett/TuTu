@@ -19,7 +19,7 @@ public:
     char bitmap [SIZE][SIZE];
 
     //初始化画布
-    Bitmap(){memset(bitmap,'0',SIZE*SIZE);}
+    Bitmap(){memset(bitmap,'#',SIZE*SIZE);}
     
     //将像素实际画到画布上，暂时用命令行实现，后期用其他画图引擎
     bool drawPixels(std::vector<PixelI> pixels);
@@ -28,7 +28,7 @@ public:
     bool doDraw();
     
     //清理画布
-    bool clear(){memset(bitmap,'0',SIZE*SIZE);}
+    bool clear(){memset(bitmap,'#',SIZE*SIZE);}
 
 };
 #endif

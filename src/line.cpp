@@ -32,7 +32,7 @@ std::vector<PixelI> Line::draw()
     int a = y0-y1, b = x0-x1;
     int deltaD1 = 2*a, deltaD2 = 2*(a+b),d = 2*a+b;
     std::vector<PixelI> pixels;
-    pixels.reserve(x1-x0+1);//点的数量是确定的
+    //pixels.reserve(x1-x0+1);//点的数量是确定的,超过限制预留大小，不能这样写
     //开始画线
     pixels.push_back(PixelI(x0,y0,c));
     for(int x = x0;x<x1;x++){
