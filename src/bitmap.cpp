@@ -12,7 +12,7 @@ bool Bitmap::doDraw()
 {
     printf("\n");
     for (int i = 0; i<SIZE; i++){
-        for (int j=0;j<SIZE;j++){
+        for (int j = 0;j<SIZE;j++){
             printf("%c",bitmap[i][j]);
         }
         printf("\n");
