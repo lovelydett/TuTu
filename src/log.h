@@ -6,8 +6,8 @@ use file to log
 
 #include <ctime>
 #include <fstream>
-#define LOG(level,msg) ofstream<<"level: "<<(level)<<", "<<(msg)<<"\n";
 extern std::ofstream logStream;
+#define LOG(level,msg) logStream<<"level: "<<level<<", "<<msg<<"\n";
 void initLog();
 void closeLog();
 
